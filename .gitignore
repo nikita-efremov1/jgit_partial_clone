@@ -19,7 +19,6 @@ hs_err_pid*
 .idea
 build
 logs
-*.log
 .gradle
 target
 

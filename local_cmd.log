@@ -1,0 +1,53 @@
+nikita.efremov@C02VV1QFHV2Q test-4 % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/nikita.efremov/IdeaProjects/test-4/.git/
+
+nikita.efremov@C02VV1QFHV2Q test-4 % git fetch --filter=blob:none https://github.com/spring-io/initializr.git "+refs/heads/*:refs/remotes/origin/*"
+remote: Enumerating objects: 22506, done.
+remote: Counting objects: 100% (22505/22505), done.
+remote: Compressing objects: 100% (9667/9667), done.
+remote: Total 22506 (delta 6071), reused 22386 (delta 5993), pack-reused 1
+Receiving objects: 100% (22506/22506), 1.91 MiB | 5.61 MiB/s, done.
+Resolving deltas: 100% (6071/6071), done.
+From https://github.com/spring-io/initializr
+ * [new branch]        0.10.x         -> origin/0.10.x
+ * [new branch]        0.13.x         -> origin/0.13.x
+ * [new branch]        ci-central     -> origin/ci-central
+ * [new branch]        main           -> origin/main
+ * [new branch]        master         -> origin/master
+ * [new branch]        restructure-ci -> origin/restructure-ci
+
+nikita.efremov@C02VV1QFHV2Q test-4 % git checkout origin/master
+remote: Enumerating objects: 234, done.
+remote: Counting objects: 100% (229/229), done.
+remote: Compressing objects: 100% (191/191), done.
+remote: Total 234 (delta 82), reused 78 (delta 36), pack-reused 5
+Receiving objects: 100% (234/234), 458.24 KiB | 3.47 MiB/s, done.
+Resolving deltas: 100% (82/82), done.
+Note: switching to 'origin/master'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 87df13e4 Add paragraph on development process in README
